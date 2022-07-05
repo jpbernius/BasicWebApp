@@ -9,7 +9,7 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         }
         if (query.toLowerCase().contains("which of the following numbers is the largest")) {
-            var segments = query.toLowerCase().split(":")
+            var segments = query.toLowerCase().split(":");
             var num1 = Integer.parseInt(segments[1]);
             var num2 = Integer.parseInt(segments[2]);
             return (num1 < num2) ? num2 : num1;
