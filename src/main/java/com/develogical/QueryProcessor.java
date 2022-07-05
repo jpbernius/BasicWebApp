@@ -10,8 +10,8 @@ public class QueryProcessor {
         }
         if (query.toLowerCase().contains("which of the following numbers is the largest")) {
             String[] segments = query.toLowerCase().split(":");
-            int num1 = Integer.parseInt(segments[1].trim());
-            int num2 = Integer.parseInt(segments[2].trim());
+            int num1 = Integer.parseInt(segments[2].trim());
+            int num2 = Integer.parseInt(segments[3].trim());
             return String.valueOf((num1 < num2) ? num2 : num1);
         }
         return "";
